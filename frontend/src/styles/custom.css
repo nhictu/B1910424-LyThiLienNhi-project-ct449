@@ -1,0 +1,29 @@
+:root {
+  --dp-input-icon-padding: 12px; 
+}
+
+.dp__input {
+    background-color:var(--cui-body-bg);
+    border-radius: var(--dp-border-radius);
+    font-family: var(--dp-font-family);
+    border: var(--cui-border-width) solid var(--cui-border-color);
+    outline: none;
+    transition: border-color .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 100%;
+    font-size: var(--dp-font-size);
+    line-height: calc(var(--dp-font-size)*1.5);
+    padding: var(--dp-input-padding);
+    color: var(--cui-body-color);
+    box-sizing: border-box;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.dp__input::placeholder {
+    color: var(--cui-body-color);
+    opacity: 0.6;
+}
